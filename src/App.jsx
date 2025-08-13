@@ -5,8 +5,8 @@ import NotFound from "./pages/NotFound";
 import CategoryPage from "./pages/CategoryPage.jsx";
 import HomePage from "./pages/homepage";
 import Header from "./components/Header";
-import Wishlist from "./pages/wishlistpage";
-import ProfilePage from "./pages/profilepage";
+import Wishlist from "./pages/WishlistPage.jsx";
+import ProfilePage from "./pages/ProfilePage.jsx";
 import Footer from "./components/footer";
 
 export default function App() {
