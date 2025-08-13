@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import ProductDetails from "./pages/ProductDetails";
 import NotFound from "./pages/NotFound";
-import CategoryPage from "./pages/categorypage";
+import CategoryPage from "./pages/CategoryPage.jsx";
 import HomePage from "./pages/homepage";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Wishlist from "./pages/wishlistpage";
 import ProfilePage from "./pages/profilepage";
 import Footer from "./components/footer";
