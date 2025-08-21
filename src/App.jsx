@@ -6,8 +6,8 @@ import Header from "./components/Header";
 import Footer from "./components/footer";
 import Modal from "./pages/modal.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
-import Wishlist from "./pages/WishlistPage.jsx";
-import HomePage from "./pages/homepage.jsx";
+import Wishlist from "./pages/Wishlist.jsx";
+import HomePage from "./pages/HomePage.jsx";
 import ProfileDetails from "./pages/ProfileDetails.jsx";
 
 export default function App() {
