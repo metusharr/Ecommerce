@@ -22,21 +22,21 @@ export const categories = [
   {
     id: 'electronics',
     name: 'Electronics',
-    image: 'https://images.unsplash.com/photo-1593344484962-796055d4a3a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D'
+    image: 'https://media.istockphoto.com/id/2168796816/photo/close-up-of-man-repairing-computer-motherboard-electronic-engineer-repairs-circuit-board.webp?a=1&b=1&s=612x612&w=0&k=20&c=ujYZlG9c34IIPTty7e8JTkBtCujQ3-ILCeU_5xPlr4s='
   },
   {
     id: 'home-decor',
     name: 'Home & Decor',
-    image: 'https://images.unsplash.com/photo-1572048572872-2394404cf1f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGRlY29yfGVufDB8fDB8fHww'
+    image: 'https://media.istockphoto.com/id/2157389780/photo/the-room-features-roller-blinds-as-part-of-the-interior.webp?a=1&b=1&s=612x612&w=0&k=20&c=rd1HxTi6pjqVZiwb2YFBq5Y7wlnhUwsSIkQswk-AMUk='
   },
   {
     id: 'sports',
     name: 'Sports & Outdoor',
-    image: 'https://images.unsplash.com/photo-1566932769119-7a1fb6d7ce23?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BvcnRzfGVufDB8fDB8fHww'
+    image: 'https://media.istockphoto.com/id/1087129218/photo/pain-in-leg.webp?a=1&b=1&s=612x612&w=0&k=20&c=1u5HcW-Gwxi934sELt8gaajtOC1qlAeHOHzuKZComrw='
   },
   {
     id: 'beauty',
     name: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww'
+    image: 'https://images.unsplash.com/file-1715714113747-b8b0561c490eimage?w=416&dpr=2&auto=format&fit=crop&q=60'
   }
 ];

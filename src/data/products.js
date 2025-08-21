@@ -452,7 +452,7 @@ export const products = [
     price: 899,
     brand: 'HP',
     category: 'electronics',
-    image: 'https://media.istockphoto.com/id/1292704748/photo/fashionable-woman-in-a-skirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=3mR7tY9vF2xP5sK8wL1nN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://plus.unsplash.com/premium_photo-1711051475117-f3a4d3ff6778?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fHww'
   },
   {
     id: 66,
