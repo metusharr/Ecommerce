@@ -69,7 +69,7 @@ export default function Wishlist() {
                 {/* Remove Button */}
                 <button
                   onClick={() => removeFromWishlist(item.id)}
-                  className="absolute top-4 right-4 bg-white border border-gray-300 text-black rounded-full p-1 hover:bg-black hover:text-white shadow-sm hover:scale-110 transition-all"
+                  className="absolute top-4 right-4 bg-white border border-gray-300 text-black rounded-full px-2 py-1 hover:bg-black hover:text-white shadow-sm hover:scale-110 transition-all"
                   title="Remove from wishlist"
                 >
                   ✕

@@ -61,9 +61,11 @@ export default function Header() {
             <button className="text-gray-800 hover:text-black text-sm font-bold hidden sm:block">
               Sign In
             </button>
-            <button className="hover:text-black transition-colors">
-              <Heart size={20} />
-            </button>
+            <Link to="/wishlist">
+              <button className="hover:text-black transition-colors">
+                <Heart size={20} />
+              </button>
+            </Link>
             <button className="hover:text-black transition-colors relative">
               <ShoppingCart size={20} />
             </button>
