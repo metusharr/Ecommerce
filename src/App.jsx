@@ -9,7 +9,6 @@ import CategoryPage from "./pages/CategoryPage.jsx";
 import HomePage from "./pages/homepage.jsx";
 import ProfileDetails from "./pages/ProfilePage.jsx";
 import Wishlist from "./pages/WishlistPage.jsx";
-
 export default function App() {
   return (
     <Router>
