@@ -100,6 +100,8 @@ const sections = [
       ,
     ],
   },
+];
+const sections1 = [
   {
     title: "Get your desired TV screen size | Starting ₹6,999",
     link: "See all",
@@ -178,15 +180,15 @@ const sections = [
         text: "Budget TVs | No Cost EMI",
       },
       {
-        img: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/GW_Hero/PC_MSO_186x116_4._SY116_CB804135937_.jpgg",
+        img: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg   ",
         text: "4K TVs | 24 months EMI",
       },
       {
-        img: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg",
+        img: " https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg",
         text: "Big Screens | Free installation",
       },
       {
-        img: "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg",
+        img: "https://images-eu.ssl-images-amazon.com/images/G/31/img21/Raghu/GW_Hero/PC_MSO_186x116_4._SY116_CB804135937_.jpgg",
         text: "Big Screens | Free installation",
       },
       ,
@@ -244,8 +246,8 @@ export default function DealsSection() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
-          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          className="w-full h-full md:object-left-top md:object-cover object-cover"
+          src="https://www.shutterstock.com/shutterstock/videos/3643911999/preview/stock-footage-hong-kong-china-chinese-shoppers-walk-past-the-american-clothing-company-brand.webm"
         />
 
         <button
@@ -258,13 +260,42 @@ export default function DealsSection() {
         >
           <span className="flex items-center justify-center w-20 h-20 rounded-full bg-white/40 backdrop-blur-md shadow-lg">
             {playing ? (
-              <Pause  size={48} className="text-white" />
+              <Pause size={48} className="text-white" />
             ) : (
               <Play size={48} className="text-white" />
             )}
           </span>{" "}
         </button>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6 bg-gray-50">
+        {sections1.map((section, idx) => (
+          <div
+            key={idx}
+            className="bg-white rounded-lg shadow p-4 flex flex-col"
+          >
+            <h2 className="text-lg font-bold mb-3">{section.title}</h2>
+            <div className="grid grid-cols-2 gap-2 mb-3">
+              {section.items.map((item, i) => (
+                <div key={i} className="text-sm text-gray-700">
+                  <img
+                    src={item.img}
+                    alt={item.text}
+                    className="w-full h-20 object-cover rounded"
+                  />
+                  <p className="mt-1">{item.text}</p>
+                </div>
+              ))}
+            </div>
+            <a
+              href="#"
+              className="text-blue-600 text-sm font-medium hover:underline mt-auto"
+            >
+              {section.link}
+            </a>
+          </div>
+        ))}
+      </div>
+
       <div>
         <div className="mt-10 px-6">
           <h2 className="text-xl font-bold mb-4">
@@ -272,12 +303,18 @@ export default function DealsSection() {
           </h2>
           <Swiper
             modules={[Navigation, Autoplay]}
-            spaceBetween={50}
+            spaceBetween={20}
             slidesPerView={4}
             navigation
             autoplay={{ delay: 3000 }}
             loop={true}
             className="rounded-lg"
+            breakpoints={{
+              320: { slidesPerView: 1, spaceBetween: 10 }, // Mobile
+              640: { slidesPerView: 2, spaceBetween: 15 }, // Small tablets
+              768: { slidesPerView: 3, spaceBetween: 20 }, // Tablets
+              1024: { slidesPerView: 4, spaceBetween: 20 }, // Laptops & Desktops
+            }}
           >
             <SwiperSlide>
               <img
@@ -310,14 +347,11 @@ export default function DealsSection() {
             <SwiperSlide>
               <img
                 src="https://m.media-amazon.com/images/I/61eatQstHtL._AC_SY200_.jpg"
-                alt="Banner 4"
+                alt="Banner 5"
                 className="w-full h-60 object-cover rounded-lg shadow"
               />
             </SwiperSlide>
           </Swiper>
-         
-         
-      
         </div>
       </div>
     </>

@@ -434,7 +434,7 @@ export const products = [
     price: 42,
     brand: 'Hermès',
     category: 'accessories',
-    image: 'https://media.istockphoto.com/id/523818848/photo/brown-leather-belt.webp?a=1&b=1&s=612x612&w=0&k=20&c=ivBqhQ1_VC2Hcap-RL6QGaeG463drrh7uwa5KWJHK0M='
+    image: 'https://media.istockphoto.com/id/1294908140/photo/mens-sneakers-on-a-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=4uQ5t6v8Q9w1E3rY7uI2oP6sA4dF8gH2jK5lM9nNpQ='
   },
   {
     id: 64,
@@ -442,7 +442,7 @@ export const products = [
     price: 28,
     brand: 'New Era',
     category: 'accessories',
-    image: 'https://media.istockphoto.com/id/474219511/photo/red-baseball-cap.webp?a=1&b=1&s=612x612&w=0&k=20&c=qfVBNyOThpLxhPD6sesMu6VwXaT9h4pfvbFxl7wDlb4='
+    image: 'https://media.istockphoto.com/id/1138269882/photo/business-woman-in-black-blazer.webp?a=1&b=1&s=612x612&w=0&k=20&c=7xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
   },
   
   // Additional Electronics

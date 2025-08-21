@@ -6,27 +6,14 @@ import ProductCard from "../components/ProductCard";
 export default function CategoryPage() {
   const { categoryId } = useParams();
   const [selectedBrand, setSelectedBrand] = useState(null);
-  const [sortOption, setSortOption] = useState("Popularity");
 
   const categoryProducts = products.filter((p) => p.category === categoryId);
+
   const brands = [...new Set(categoryProducts.map((p) => p.brand))];
 
-  // Pre-filter by brand if selected
-  let filteredProducts = selectedBrand
+  const filteredProducts = selectedBrand
     ? categoryProducts.filter((p) => p.brand === selectedBrand)
     : categoryProducts;
-
-  // Sort products according to sortOption
-  if (sortOption === "Price: Low to High") {
-    filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
-  } else if (sortOption === "Price: High to Low") {
-    filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
-  } else if (sortOption === "Newest First") {
-    filteredProducts = [...filteredProducts].sort(
-      (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
-    );
-  }
-  // For "Popularity" and default, don't sort—keep original order
 
   return (
     <div className="bg-white min-h-screen py-8">
@@ -38,9 +25,11 @@ export default function CategoryPage() {
               {categoryId}
             </h1>
             <p className="mt-2 text-gray-600">
-              Showing {filteredProducts.length} of {categoryProducts.length} products
+              Showing {filteredProducts.length} of {categoryProducts.length}{" "}
+              products
             </p>
           </div>
+
           {/* Sort Dropdown - Professional UI Element */}
           <div className="mt-4 md:mt-0">
             <label
@@ -51,8 +40,6 @@ export default function CategoryPage() {
             </label>
             <select
               id="sort"
-              value={sortOption}
-              onChange={e => setSortOption(e.target.value)}
               className="rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
               <option>Popularity</option>
@@ -76,10 +63,7 @@ export default function CategoryPage() {
               <div className="mb-6">
                 <h3 className="text-base font-semibold text-gray-800 mb-3 flex items-center justify-between">
                   <span>Brand</span>
-                  <button
-                    className="text-blue-600 text-sm font-medium"
-                    onClick={() => setSelectedBrand(null)}
-                  >
+                  <button className="text-blue-600 text-sm font-medium">
                     Clear
                   </button>
                 </h3>
@@ -124,8 +108,87 @@ export default function CategoryPage() {
                 </div>
               </div>
 
-              {/* Price Range, Discount, Rating Filters Stub - UI only */}
-              {/* ...Keep your filters here as in your original... */}
+              {/* Additional Filter Sections - Professional UI Pattern */}
+              <div className="mb-6">
+                <h3 className="text-base font-semibold text-gray-800 mb-3">
+                  Price Range
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-600">Min</span>
+                    <input
+                      type="number"
+                      className="w-24 rounded-md border border-gray-300 px-3 py-1 text-sm"
+                      placeholder="0"
+                    />
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-600">Max</span>
+                    <input
+                      type="number"
+                      className="w-24 rounded-md border border-gray-300 px-3 py-1 text-sm"
+                      placeholder="5000"
+                    />
+                  </div>
+                  <button className="w-full mt-2 py-2 bg-gray-100 text-gray-800 text-sm font-medium rounded-md hover:bg-gray-200 transition-colors">
+                    Apply
+                  </button>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h3 className="text-base font-semibold text-gray-800 mb-3">
+                  Discount Range
+                </h3>
+                <div className="space-y-2">
+                  {[
+                    "10% and above",
+                    "20% and above",
+                    "30% and above",
+                    "40% and above",
+                    "50% and above",
+                  ].map((discount) => (
+                    <div key={discount} className="flex items-center">
+                      <input
+                        id={`discount-${discount}`}
+                        name="discount"
+                        type="checkbox"
+                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                      />
+                      <label
+                        htmlFor={`discount-${discount}`}
+                        className="ml-3 text-sm text-gray-700"
+                      >
+                        {discount}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-base font-semibold text-gray-800 mb-3">
+                  Customer Ratings
+                </h3>
+                <div className="space-y-2">
+                  {["4★ & above", "3★ & above", "2★ & above"].map((rating) => (
+                    <div key={rating} className="flex items-center">
+                      <input
+                        id={`rating-${rating}`}
+                        name="rating"
+                        type="checkbox"
+                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                      />
+                      <label
+                        htmlFor={`rating-${rating}`}
+                        className="ml-3 text-sm text-gray-700"
+                      >
+                        {rating}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -158,7 +221,19 @@ export default function CategoryPage() {
               </div>
             ) : (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-12 text-center">
-                {/* ...No products found UI... */}
+                <svg
+                  className="mx-auto h-12 w-12 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
                 <h3 className="mt-4 text-lg font-medium text-gray-900">
                   No products found
                 </h3>

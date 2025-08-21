@@ -1,5 +1,6 @@
 import { categories } from "../data/categories";
 import { Link } from "react-router-dom";
+import DealsSection from "../pages/modal";
 
 export default function HomePage() {
   return (
@@ -50,6 +51,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+          <DealsSection/>
       </div>
     </div>
   );

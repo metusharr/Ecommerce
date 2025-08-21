@@ -1,11 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import { Heart, Search, ShoppingCart, Menu, X } from "lucide-react";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  const navlinks = [
+    { title: "men", link: "/category/men" },
+    { title: "kids", link: "/category/kids" },
+    { title: "women", link: "/category/women"},
+    { title: "New & Featured", link: null},
+    { title: "Limited Edition", link: null},
+  ];
   return (
     <header className="bg-white border-b sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3">
@@ -27,16 +34,15 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {["New & Featured", "Women", "Men", "Kids", "Limited Edition"].map(
-              (item, idx) => (
-                <button
-                  key={idx}
-                  className="text-gray-800 hover:text-black font-medium text-sm tracking-wide uppercase"
-                >
-                  {item}
-                </button>
-              )
-            )}
+            {navlinks.map((item, idx) => (
+              <Link
+                key={idx}
+                to={item.link}
+                className="text-gray-800 hover:text-black font-medium text-sm tracking-wide uppercase"
+              >
+                {item.title}
+              </Link>
+            ))}
             <button className="text-red-600 hover:text-red-700 font-medium text-sm tracking-wide uppercase">
               Sale
             </button>
