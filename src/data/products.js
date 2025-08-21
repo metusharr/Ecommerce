@@ -434,7 +434,7 @@ export const products = [
     price: 42,
     brand: 'Hermès',
     category: 'accessories',
-    image: 'https://media.istockphoto.com/id/1294908140/photo/mens-sneakers-on-a-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=4uQ5t6v8Q9w1E3rY7uI2oP6sA4dF8gH2jK5lM9nNpQ='
+    image: 'https://media.istockphoto.com/id/523818848/photo/brown-leather-belt.webp?a=1&b=1&s=612x612&w=0&k=20&c=ivBqhQ1_VC2Hcap-RL6QGaeG463drrh7uwa5KWJHK0M='
   },
   {
     id: 64,
@@ -442,7 +442,7 @@ export const products = [
     price: 28,
     brand: 'New Era',
     category: 'accessories',
-    image: 'https://media.istockphoto.com/id/1138269882/photo/business-woman-in-black-blazer.webp?a=1&b=1&s=612x612&w=0&k=20&c=7xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://media.istockphoto.com/id/474219511/photo/red-baseball-cap.webp?a=1&b=1&s=612x612&w=0&k=20&c=qfVBNyOThpLxhPD6sesMu6VwXaT9h4pfvbFxl7wDlb4='
   },
   
   // Additional Electronics
@@ -460,7 +460,7 @@ export const products = [
     price: 129,
     brand: 'JBL',
     category: 'electronics',
-    image: 'https://media.istockphoto.com/id/1289234754/photo/woman-in-knit-sweater.webp?a=1&b=1&s=612x612&w=0&k=20&c=6xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://media.istockphoto.com/id/1129572489/photo/portable-bluetooth-speaker.webp?a=1&b=1&s=612x612&w=0&k=20&c=-7LF73ehOdwcQDMXXBtnCuUyIGMRoiaeWsBqTtdpFqs='
   },
   {
     id: 67,
@@ -468,7 +468,7 @@ export const products = [
     price: 449,
     brand: 'Samsung',
     category: 'electronics',
-    image: 'https://media.istockphoto.com/id/1206807363/photo/woman-with-sunglasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=9xY2tP5sR3vF6hJ8kL1mN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://plus.unsplash.com/premium_photo-1673968280716-ca0c00af8a39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VGFibGV0fGVufDB8fDB8fHww'
   },
   
   // Additional Home Decor
@@ -478,7 +478,7 @@ export const products = [
     price: 35,
     brand: 'West Elm',
     category: 'home-decor',
-    image: 'https://media.istockphoto.com/id/1294908140/photo/mens-sneakers-on-a-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=4uQ5t6v8Q9w1E3rY7uI2oP6sA4dF8gH2jK5lM9nNpQ='
+    image: 'https://media.istockphoto.com/id/1176171347/photo/scented-candle-burning-on-sofa-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=NXhsEC86PzBpemwKQGRA_RlEmfXvjPXNalqAfAOGMfc='
   },
   {
     id: 69,
@@ -486,7 +486,7 @@ export const products = [
     price: 45,
     brand: 'IKEA',
     category: 'home-decor',
-    image: 'https://media.istockphoto.com/id/1138269882/photo/business-woman-in-black-blazer.webp?a=1&b=1&s=612x612&w=0&k=20&c=7xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://media.istockphoto.com/id/1463799233/photo/indian-piggy-money-bank-gullak-with-rupee-100-note-wall-clock-and-photo-frame-3d-illustration.webp?a=1&b=1&s=612x612&w=0&k=20&c=2N92xAckdWcHAz1hXOMKCoCIOEJ_0hlWU3EU4_CMQS8='
   },
   {
     id: 70,
@@ -494,7 +494,7 @@ export const products = [
     price: 55,
     brand: 'Pottery Barn',
     category: 'home-decor',
-    image: 'https://media.istockphoto.com/id/1292704748/photo/fashionable-woman-in-a-skirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=3mR7tY9vF2xP5sK8wL1nN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://media.istockphoto.com/id/140263951/photo/purple-crochet-afghan.webp?a=1&b=1&s=612x612&w=0&k=20&c=1L2Q408YzJNoJ4ReoawLwYDRSob36BxX1vmJV-faSY4='
   },
   
   // Additional Beauty Products
@@ -504,7 +504,7 @@ export const products = [
     price: 42,
     brand: 'Urban Decay',
     category: 'beauty',
-    image: 'https://media.istockphoto.com/id/1289234754/photo/woman-in-knit-sweater.webp?a=1&b=1&s=612x612&w=0&k=20&c=6xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://media.istockphoto.com/id/1203799724/photo/mua-and-girly-concept-eyeshadow-palette-on-white-background-eye-shadows-cosmetics-product-as.webp?a=1&b=1&s=612x612&w=0&k=20&c=YRJNleMft_8piLjCfAjEwRTnly_RaPg2KQ9VY8Z8e8k='
   },
   {
     id: 72,
@@ -512,7 +512,7 @@ export const products = [
     price: 15,
     brand: 'L\'Oréal',
     category: 'beauty',
-    image: 'https://media.istockphoto.com/id/1206807363/photo/woman-with-sunglasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=9xY2tP5sR3vF6hJ8kL1mN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RmFjZSUyME1hc2t8ZW58MHx8MHx8fDA%3D'
   },
   {
     id: 73,
@@ -520,7 +520,7 @@ export const products = [
     price: 75,
     brand: 'Remington',
     category: 'beauty',
-    image: 'https://media.istockphoto.com/id/1294908140/photo/mens-sneakers-on-a-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=4uQ5t6v8Q9w1E3rY7uI2oP6sA4dF8gH2jK5lM9nNpQ='
+    image: 'https://media.istockphoto.com/id/1224865735/photo/hairstyling-iron.webp?a=1&b=1&s=612x612&w=0&k=20&c=uugGcYXM_c9LgYNSIKoVxV1_WbWVghJBeT0-cBRMpAg='
   },
   
   // New Category: Sports
@@ -530,7 +530,7 @@ export const products = [
     price: 25,
     brand: 'Lululemon',
     category: 'sports',
-    image: 'https://media.istockphoto.com/id/1138269882/photo/business-woman-in-black-blazer.webp?a=1&b=1&s=612x612&w=0&k=20&c=7xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8WW9nYSUyME1hdHxlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     id: 75,
@@ -538,7 +538,7 @@ export const products = [
     price: 120,
     brand: 'Wilson',
     category: 'sports',
-    image: 'https://media.istockphoto.com/id/1292704748/photo/fashionable-woman-in-a-skirt.webp?a=1&b=1&s=612x612&w=0&k=20&c=3mR7tY9vF2xP5sK8wL1nN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://media.istockphoto.com/id/2101865807/photo/tennis-racket-and-ball-on-the-court-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=FAGmU8Ls74LUb8VX27oI-nRGf-whVvK2dECdmCsBj_w='
   },
   {
     id: 76,
@@ -546,7 +546,7 @@ export const products = [
     price: 35,
     brand: 'Spalding',
     category: 'sports',
-    image: 'https://media.istockphoto.com/id/1289234754/photo/woman-in-knit-sweater.webp?a=1&b=1&s=612x612&w=0&k=20&c=6xY9zT2wP5sR3vF6hJ8kL2mN4pQ7wE1tG6yB9nVcXo='
+    image: 'https://media.istockphoto.com/id/1954308155/photo/balls-isolated.webp?a=1&b=1&s=612x612&w=0&k=20&c=4lqhBgK4b_Gkr_M6JuFrpNHTmVIB2TVcfoX_FR1bnt0='
   },
   {
     id: 77,
@@ -554,7 +554,7 @@ export const products = [
     price: 95,
     brand: 'Asics',
     category: 'sports',
-    image: 'https://media.istockphoto.com/id/1206807363/photo/woman-with-sunglasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=9xY2tP5sR3vF6hJ8kL1mN4pQ7xE2tG6yB9nVcXoZdA='
+    image: 'https://media.istockphoto.com/id/1258110890/photo/indian-made-mens-sports-shoes-isolated-on-gray.webp?a=1&b=1&s=612x612&w=0&k=20&c=-9uZ5IeWxY4jd5WTwDFitFjNYQ0nG5nXw_gzaz_QozI='
   },
   
   // New Category: Books
