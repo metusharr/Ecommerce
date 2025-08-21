@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { products } from "../data/products";
-import ProductCard from "../components/productcard";
+import ProductCard from "../components/ProductCard";
 
 export default function CategoryPage() {
   const { categoryId } = useParams();
