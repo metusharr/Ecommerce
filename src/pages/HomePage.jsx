@@ -7,12 +7,30 @@ export default function HomePage() {
     <div className="bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-tight drop-shadow-lg">
-            Shop by <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">Category</span>
+        <div className="text-center mb-16 relative">
+          {/* Decorative gradient circles in background */}
+          <div className="absolute -top-10 -left-10 w-40 h-40 bg-pink-300 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute top-0 right-0 w-52 h-52 bg-indigo-400 rounded-full blur-3xl opacity-20 animate-ping"></div>
+
+          {/* Title */}
+          <h1 className="relative text-5xl sm:text-6xl font-extrabold text-gray-900 tracking-tight drop-shadow-xl">
+            Shop by{" "}
+            <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 animate-text-shine">
+              Category
+              {/* glowing underline */}
+              <span className="absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-full blur-sm opacity-70"></span>
+            </span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover handpicked collections designed to inspire your next look.
+
+          {/* Subtitle */}
+          <p className="mt-8 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed animate-fade-in">
+            ✨ Discover{" "}
+            <span className="font-semibold text-indigo-500">
+              handpicked collections
+            </span>
+            designed to inspire your{" "}
+            <span className="italic text-pink-500">next look</span>. From
+            everyday essentials to bold statements, we’ve got you covered.
           </p>
         </div>
 
@@ -51,7 +69,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-          <DealsSection/>
+        <DealsSection />
       </div>
     </div>
   );
