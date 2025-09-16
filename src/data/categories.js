@@ -37,6 +37,6 @@ export const categories = [
   {
     id: 'beauty',
     name: 'Beauty & Personal Care',
-    image: 'https://images.unsplash.com/file-1715714113747-b8b0561c490eimage?w=416&dpr=2&auto=format&fit=crop&q=60'
+    image: 'https://media.istockphoto.com/id/623214156/photo/your-face-will-show-you-inner-glow.webp?a=1&b=1&s=612x612&w=0&k=20&c=d1SNbRxRAj2kE_EQq57LyGV3HA922_0cIjt8DLWNkno='
   }
 ];
